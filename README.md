@@ -8,3 +8,13 @@ It has the capability of using many different models and automatically stack and
 Dataset: [Bike Sharing Demand](https://www.kaggle.com/c/bike-sharing-demand)
 
 This is a quick test of AutoGluon on Sagemake and did not spent too much time on feature selection and cleaning.
+
+## Endpoints and Model Deployment on AWS Sagemaker
+
+A simple example on:
+- Preprocessing and resaving data on S3 (Sagemaker needs data on AWS S3)
+- Setting up a training job from AWS available frameworks in a notebook
+- Deploying the trained model and creating an endpoint instance for inference model (model in production)
+- Sending inputs to the endpoint. Killing the endpoint if it is not used.
+
+Data: [E-commerce's reviews](https://www.kaggle.com/code/u601372/e-commerce-s-review/data)
