@@ -18,3 +18,17 @@ A simple example on:
 - Sending inputs to the endpoint. Killing the endpoint if it is not used.
 
 Data: [E-commerce's reviews](https://www.kaggle.com/code/u601372/e-commerce-s-review/data)
+
+## Model Monitoring
+
+We need to monitor model performance after deployment for several reasons. For example:
+- To check if the model performance is decreasing and a re-training job should be initiated.
+- To check if the distribution of the input data going to the model is changing.
+- To learn more about the statistics and performance of the data as well as inferences.
+- Also we may need to explain why the model makes a prediction.
+
+This is possible by using AWS Sagemake monitoring capabilities such as Clarify, Default Model Monitor, and Data Capture Config.
+
+The design pattern used for creating objects and instances for monitoring is a bit complicated. The figure below gives a simplified visualization that can help understand the flow and be able to create and set the parameters for each object in correct order.
+
+<img src="media/Monitors_Pattern.PNG" width="450" height="510" />
