@@ -24,7 +24,7 @@ Data: [E-commerce's reviews](https://www.kaggle.com/code/u601372/e-commerce-s-re
 We need to monitor model performance after deployment for several reasons. For example:
 - To check if the model performance is decreasing and a re-training job should be initiated.
 - To check if the distribution of the input data going to the model is changing.
-- To learn more about the statistics and performance of the data as well as inferences.
+- To learn more about the statistics and performance of the data as well as the inferences.
 - Also we may need to explain why the model makes a prediction.
 
 This is possible by using AWS Sagemake monitoring capabilities such as Clarify, Default Model Monitor, and Data Capture Config.
