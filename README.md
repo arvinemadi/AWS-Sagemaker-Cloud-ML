@@ -32,3 +32,5 @@ This is possible by using AWS Sagemake monitoring capabilities such as Clarify, 
 The design pattern used for creating objects and instances for monitoring is a bit complicated. The figure below gives a simplified visualization that can help understand the flow and be able to create and set the parameters for each object in correct order.
 
 <img src="media/Monitors_Pattern.PNG" width="850" height="450" />
+
+[Wine Dataset](https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_wine.html) that is used in an earlier notebook to demo the XGBoot feature importance, is used to train and deploy a XGBoost endpoint. Then a Clarify endpoint using SHAP algorithm is deployed. The notebook has more explanation on to initialize and set the monitors.
