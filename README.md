@@ -31,4 +31,4 @@ This is possible by using AWS Sagemake monitoring capabilities such as Clarify, 
 
 The design pattern used for creating objects and instances for monitoring is a bit complicated. The figure below gives a simplified visualization that can help understand the flow and be able to create and set the parameters for each object in correct order.
 
-<img src="media/Monitors_Pattern.PNG" width="650" height="510" />
+<img src="media/Monitors_Pattern.PNG" width="650" height="410" />
