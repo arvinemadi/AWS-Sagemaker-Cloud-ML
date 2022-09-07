@@ -1,0 +1,83 @@
+{
+  "Comment": "A description of my state machine",
+  "StartAt": "Lambda Invoke Generate Data",
+  "States": {
+    "Lambda Invoke Generate Data": {
+      "Type": "Task",
+      "Resource": "arn:aws:states:::lambda:invoke",
+      "OutputPath": "$.Payload",
+      "Parameters": {
+        "Payload.$": "$",
+        "FunctionName": "arn:aws:lambda:us-east-1:286375333242:function:LambdaGenerateData:$LATEST"
+      },
+      "Retry": [
+        {
+          "ErrorEquals": [
+            "Lambda.ServiceException",
+            "Lambda.AWSLambdaException",
+            "Lambda.SdkClientException"
+          ],
+          "IntervalSeconds": 2,
+          "MaxAttempts": 6,
+          "BackoffRate": 2
+        }
+      ],
+      "Next": "Lambda Invoke Infer"
+    },
+    "Lambda Invoke Infer": {
+      "Type": "Task",
+      "Resource": "arn:aws:states:::lambda:invoke",
+      "OutputPath": "$.Payload",
+      "Parameters": {
+        "Payload": {
+          "image_data.$": "$.body.image_data",
+          "s3_bucket.$": "$.body.s3_bucket",
+          "s3_key.$": "$.body.s3_key",
+          "inferences.$": "$.body.inferences"
+        },
+        "FunctionName": "arn:aws:lambda:us-east-1:286375333242:function:LambdaInfer:$LATEST"
+      },
+      "Retry": [
+        {
+          "ErrorEquals": [
+            "Lambda.ServiceException",
+            "Lambda.AWSLambdaException",
+            "Lambda.SdkClientException"
+          ],
+          "IntervalSeconds": 2,
+          "MaxAttempts": 6,
+          "BackoffRate": 2
+        }
+      ],
+      "Next": "Lambda Invoke Filter"
+    },
+    "Lambda Invoke Filter": {
+      "Type": "Task",
+      "Resource": "arn:aws:states:::lambda:invoke",
+      "OutputPath": "$.Payload",
+      "Parameters": {
+        "FunctionName": "arn:aws:lambda:us-east-1:286375333242:function:LambdaFilter:$LATEST",
+        "Payload": {
+          "image_data.$": "$.body.image_data",
+          "s3_bucket.$": "$.body.s3_bucket",
+          "s3_key.$": "$.body.s3_key",
+          "inferences.$": "$.body.inferences"
+        }
+      },
+      "Retry": [
+        {
+          "ErrorEquals": [
+            "Lambda.ServiceException",
+            "Lambda.AWSLambdaException",
+            "Lambda.SdkClientException"
+          ],
+          "IntervalSeconds": 2,
+          "MaxAttempts": 6,
+          "BackoffRate": 2
+        }
+      ],
+      "End": true
+      
+    }
+  }
+}
