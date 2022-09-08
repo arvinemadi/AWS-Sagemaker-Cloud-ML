@@ -1,5 +1,5 @@
 
-Usually we want lambda functions to form a serverless workflow. The lambda functions can be interface between the users and deployed instances, they can also perform tasks such as data transformation and filtering. 
+Lambda functions to form a serverless workflow. The lambda functions can be interface between the users and deployed instances, they can also perform tasks such as data transformation and filtering. 
 
 In this small project, we define three lambda functions:
 - data transformation 
