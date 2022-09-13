@@ -42,3 +42,17 @@ Lambda functions can be used to form a serverless workflow. The lambda functions
 Then we create a step function to orchestrate the workflow. The output of each lambda function can be defined as the input of the next. Although not used here, step function state machine can also help deciding on what task should be done next based on the previous results. The step function is created using the graphical user interface and the JSON output of that is also shown.
 
 Then a demo of visualization from the DataCapture Monitor is shown.
+
+## Script mode training with hp-tuning, debugging, and profiling
+
+This notebook illustrates the following:
+
+Reference: [Extend a prebuilt container](https://docs.aws.amazon.com/sagemaker/latest/dg/prebuilt-containers-extend.html)
+
+- How to use script mode for training
+- How to do hyper-parameter tuning in script mode
+- How to use sagemaker debugger and profiler and output the data
+- How to package code in a customized docker container
+
+
+
