@@ -1,10 +1,8 @@
-This note book shows:
+This project illustrates the following:
 
-- How to use script mode for training.
-- How to do hyper-parameter tuning
-- How to use sagemaker debugger and profiler
+Reference: [Extend a prebuilt container](https://docs.aws.amazon.com/sagemaker/latest/dg/prebuilt-containers-extend.html)
 
-Dataset: https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/dogImages.zip
-
-
-Reference: https://docs.aws.amazon.com/sagemaker/latest/dg/prebuilt-containers-extend.html
+- How to use script mode for training
+- How to do hyper-parameter tuning in script mode
+- How to use sagemaker debugger and profiler and output the data
+- How to package code in a customized docker container
