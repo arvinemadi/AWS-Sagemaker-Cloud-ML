@@ -45,7 +45,7 @@ Then a demo of visualization from the DataCapture Monitor is shown.
 
 ## Script mode training with hp-tuning, debugging, and profiling
 
-This notebook illustrates the following:
+This project illustrates the following:
 
 Reference: [Extend a prebuilt container](https://docs.aws.amazon.com/sagemaker/latest/dg/prebuilt-containers-extend.html)
 
