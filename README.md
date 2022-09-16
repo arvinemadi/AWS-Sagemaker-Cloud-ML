@@ -54,5 +54,9 @@ Reference: [Extend a prebuilt container](https://docs.aws.amazon.com/sagemaker/l
 - How to use sagemaker debugger and profiler and output the data
 - How to package code in a customized docker container
 
+Useful links:
+- [Intro to MLOps](https://medium.com/illumination/introduction-to-mlops-f877ccf10db1)
+- [Intro to Sagemaker](https://medium.com/swlh/a-gentle-introduction-to-aws-sagemaker-ml-ai-on-the-cloud-de8dd0191818)
+- [More info on Sagemaker](https://medium.com/@rafalb/machine-learning-with-aws-sagemaker-part-1-571d57a757e3)
 
 
