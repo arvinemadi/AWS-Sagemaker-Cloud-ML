@@ -61,4 +61,8 @@ Reference: [Extend a prebuilt container](https://docs.aws.amazon.com/sagemaker/l
 
 ## ML system for diagnosis of Pneumonia from X-ray images
 
+End-to-End flow for an ML system for detection of Pneumonia from X-ray images is implemeted and illustrated on AWS.
+
+Most works on medical imaging classifiers ignore the fact that for a diagnosis a probability of detection is crucial. In this project a probability calibration model is trained, applied, and deployed to the output of an image classifier.
+
 <img src="media/Pneumonia_Detector_From_Chest_Xray.PNG" width="850" height="420" />
