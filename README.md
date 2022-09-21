@@ -47,8 +47,6 @@ Then a demo of visualization from the DataCapture Monitor is shown.
 
 This project illustrates the following:
 
-Reference: [Extend a prebuilt container](https://docs.aws.amazon.com/sagemaker/latest/dg/prebuilt-containers-extend.html)
-
 - How to use script mode for training
 - How to do hyper-parameter tuning in script mode
 - How to use sagemaker debugger and profiler and output the data
@@ -59,4 +57,8 @@ Useful links:
 - [Intro to Sagemaker](https://medium.com/swlh/a-gentle-introduction-to-aws-sagemaker-ml-ai-on-the-cloud-de8dd0191818)
 - [More info on Sagemaker](https://medium.com/@rafalb/machine-learning-with-aws-sagemaker-part-1-571d57a757e3)
 
+Reference: [Extend a prebuilt container](https://docs.aws.amazon.com/sagemaker/latest/dg/prebuilt-containers-extend.html)
 
+## ML system for diagnosis of Pneumonia from X-ray images
+
+<img src="media/Pneumonia_Detector.PNG" width="850" height="420" />
