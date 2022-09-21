@@ -59,7 +59,7 @@ Useful links:
 
 Reference: [Extend a prebuilt container](https://docs.aws.amazon.com/sagemaker/latest/dg/prebuilt-containers-extend.html)
 
-## ML system for diagnosis of Pneumonia from X-ray images
+## Diagnosis of Pneumonia from X-ray images
 
 End-to-End flow for an ML system for detection of Pneumonia from X-ray images is implemeted and illustrated on AWS.
 
