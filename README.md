@@ -61,4 +61,4 @@ Reference: [Extend a prebuilt container](https://docs.aws.amazon.com/sagemaker/l
 
 ## ML system for diagnosis of Pneumonia from X-ray images
 
-<img src="media/Pneumonia_Detector_From_Chest_Xray.PNG.PNG" width="850" height="420" />
+<img src="media/Pneumonia_Detector_From_Chest_Xray.PNG" width="850" height="420" />
