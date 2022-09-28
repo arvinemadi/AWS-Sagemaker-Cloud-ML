@@ -1,7 +1,7 @@
 
 System Design for an medical imaging example (Pneumonia Detection from X-ray Images)
 
-<img src="./AWS-Sagemaker-Cloud-ML/media/Pneumonia_Detector_From_Chest_Xray.PNG" width="850" height="420" />
+<img src="AWS-Sagemaker-Cloud-ML/media/Pneumonia_Detector_From_Chest_Xray.PNG" width="850" height="420" />
 
 Keywords:
 - End-to-End workflow.
